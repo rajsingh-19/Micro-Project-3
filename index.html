@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <meta name="author" content="Raj Singh">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+</head>
+<body class="flex dir-col justify-center items-center">
+    <!--        Calc Heading         -->
+    <div class="heading">
+        <p class="primary-text-color font-inter font-weight-800">calc</p>
+    </div>    
+    <!--        Output Section       -->
+    <div class="output-container b-r-12 flex items-center">
+        <input class="primary-text-color output-content border-none" placeholder="0" readonly>
+    </div>
+    <!--        Keypad Section       -->
+    <div class="keypad-container grid b-r-12">
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">7</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">8</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">9</button>
+        <button class="grid-items b-r-12 font-inter font-weight-800 text-24 border-none cursor-pointer del primary-text-color">DEL</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">4</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">5</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">6</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">+</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">1</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">2</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">3</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">-</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">.</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">0</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">/</button>
+        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">x</button>
+        <button class="grid-items b-r-11 font-inter font-weight-800 text-24 border-none cursor-pointer reset primary-text-color">RESET</button>
+        <button class="grid-items b-r-11 font-inter font-weight-800 text-24 border-none cursor-pointer equals-to primary-text-color">=</button>
+    </div>
+</body>
+</html>
