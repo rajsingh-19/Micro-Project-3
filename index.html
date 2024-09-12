@@ -17,28 +17,29 @@
     </div>    
     <!--        Output Section       -->
     <div class="output-container b-r-12 flex items-center">
-        <input class="primary-text-color output-content border-none" placeholder="0" readonly>
+        <input type="text" id="output-display" class="primary-text-color output-content border-none" placeholder="0" readonly>
     </div>
     <!--        Keypad Section       -->
     <div class="keypad-container grid b-r-12">
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">7</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">8</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">9</button>
-        <button class="grid-items b-r-12 font-inter font-weight-800 text-24 border-none cursor-pointer del primary-text-color">DEL</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">4</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">5</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">6</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">+</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">1</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">2</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">3</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">-</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">.</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">0</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">/</button>
-        <button class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">x</button>
-        <button class="grid-items b-r-11 font-inter font-weight-800 text-24 border-none cursor-pointer reset primary-text-color">RESET</button>
-        <button class="grid-items b-r-11 font-inter font-weight-800 text-24 border-none cursor-pointer equals-to primary-text-color">=</button>
+        <button onclick="operandFunction(7)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">7</button>
+        <button onclick="operandFunction(8)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">8</button>
+        <button onclick="operandFunction(9)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">9</button>
+        <button onclick="deleteFunction()" class="grid-items b-r-12 font-inter font-weight-800 text-24 border-none cursor-pointer del primary-text-color">DEL</button>
+        <button onclick="operandFunction(4)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">4</button>
+        <button onclick="operandFunction(5)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">5</button>
+        <button onclick="operandFunction(6)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">6</button>
+        <button onclick="operatorFunction('+')" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">+</button>
+        <button onclick="operandFunction(1)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">1</button>
+        <button onclick="operandFunction(2)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">2</button>
+        <button onclick="operandFunction(3)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">3</button>
+        <button onclick="operatorFunction('-')" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">-</button>
+        <button onclick="operandFunction('.')" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">.</button>
+        <button onclick="operandFunction(0)" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">0</button>
+        <button onclick="operatorFunction('/')" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">/</button>
+        <button onclick="operatorFunction('*')" class="grid-items b-r-12 secondary-text-color font-inter font-weight-800 text-28 border-none cursor-pointer">x</button>
+        <button onclick="resetFunction()" class="grid-items b-r-11 font-inter font-weight-800 text-24 border-none cursor-pointer reset primary-text-color">RESET</button>
+        <button onclick="equalstoFunction()" class="grid-items b-r-11 font-inter font-weight-800 text-24 border-none cursor-pointer equals-to primary-text-color">=</button>
     </div>
+    <script src="/index.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@ body {
 }
 .heading {        
     margin-bottom: 5px;
-    width: 380px;
+    width: 480px;
 }
 .heading p {
     text-align: left;
@@ -17,7 +17,8 @@ body {
 }
 .output-container {
     background-color: #181F32;
-    width: 380px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 480px;
     height: 10%;
     padding: 20px;
     margin-bottom: 20px;
@@ -35,9 +36,10 @@ body {
 }
 .keypad-container {
     background-color: #252D44;
-    width: 380px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    width: 480px;
     padding: 20px;
-    gap: 20px;
+    gap: 25px;
     grid-template-columns: repeat(4, 1fr);
 }
 .text-24 {
